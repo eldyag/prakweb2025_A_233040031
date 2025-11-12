@@ -1,0 +1,7 @@
+Options -Indexes
+RewriteEngine On
+RewriteBase /Prakweb2025_233040031/pertemuan2/Tugas/TemplateMVC/public/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [L]
+
